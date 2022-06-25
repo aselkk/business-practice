@@ -1,0 +1,11 @@
+mixin form()
+    .form-container
+        form#form-input-id.form-input.services__form.col-xl-7(name='separate-form')
+            input#userName.form-input.userName-form-input(type='text', name='userName', placeholder='Ваше имя')
+            span.error-text.userName-input-error
+            input#userEmail.form-input.userEmail-form-input(type='email', name='userEmail', placeholder='Email')
+            span.error-text.userEmail-input-error
+            button#form__btn.form__btn(type='submit', name='submit') Получить консультацию
+            img.p-big(src="assets/img/p-big.png", alt="")
+            img.p-sm(src="assets/img/p-sm.png", alt="")
+            img.p-middle(src="assets/img/p-middle.png", alt="")

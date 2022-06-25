@@ -1,0 +1,32 @@
+.container__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+
+    p {
+        color: #9FA7B0;
+        margin: 0;
+    }
+}
+
+.footer{
+    background-color: #3F4750;
+    margin-top: 99px;
+    
+    svg:hover path {
+        fill:#47CF34;
+    }
+
+    &__sm {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 360px){ 
+    .container__footer{
+        flex-direction: column;
+        gap:7px;
+    }
+}

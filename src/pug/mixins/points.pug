@@ -1,0 +1,6 @@
+mixin points(items)
+    ul.points-list
+        each item in items
+            li.point-list__item
+                img(src="assets/img/circle.svg")
+                p.list_item__text= item

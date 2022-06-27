@@ -8308,6 +8308,16 @@ const renderFormValidation = () => {
 
         document.getElementById('userName').value = '';
         document.getElementById('userEmail').value = '';
+
+        setTimeout(() => {
+            document.querySelector('.form-btn').removeAttribute('disabled');
+            document.querySelector('form-btn').innerText = 'отправить';
+
+            document.getElementById('name').value = '';
+            document.getElementById('mail').value = '';
+
+            console.log(values);
+        }, 2000);
     };
 };
 
@@ -8330,7 +8340,6 @@ const initModalToggling = () =>{
             showModalWindow(this);
             console.log('123')
         });
-    
 
     document.querySelector(".modal-hide-btn").addEventListener("click", function () {
             hideModalWindow();

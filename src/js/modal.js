@@ -5,7 +5,6 @@ export const initModalToggling = () =>{
             showModalWindow(this);
             console.log('123')
         });
-    
 
     document.querySelector(".modal-hide-btn").addEventListener("click", function () {
             hideModalWindow();

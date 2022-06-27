@@ -1,0 +1,168 @@
+* {
+  color: #282C37;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+a {
+  list-style: none;
+  text-decoration: none !important;
+}
+
+li a {
+  list-style: none;
+  text-decoration: none;
+  color: #282C37;
+  cursor: pointer;
+}
+
+li a svg:hover path {
+  fill: #47CF34;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.page-title {
+  font: 44px 'Lato-700';
+}
+
+.page-subtitle {
+  font: 30px 'Lato-700';
+}
+
+.page_list {
+  padding-left: 42px;
+}
+
+.points-list {
+  padding-left: 59px;
+}
+
+.page_list,
+.points-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  margin: 0;
+  gap: 14px;
+}
+
+.page_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 42px;
+}
+
+.page_list_item p {
+  margin: 0;
+}
+
+.page_list_item svg {
+  min-width: 23px;
+}
+
+.point-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 19px;
+}
+
+.point-list__item p {
+  margin: 0;
+}
+
+.section__page {
+  margin-top: 65px;
+}
+
+.text-span {
+  color: #6CA7EF;
+}
+
+.page-text {
+  padding-left: 18px;
+  margin-top: 36px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 36px;
+  font: 18px "Lato-400";
+  gap: 20px;
+}
+
+.breadcrumb-item {
+  font-family: Roboto;
+  color: #9FA7B0;
+  font-size: 14px;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 16px !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 16px !important;
+}
+
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1200px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .training-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  .training-card .page_list {
+    padding: 0;
+  }
+  .training-card .page_list_item {
+    gap: 9px;
+  }
+  .training-card .card-left {
+    gap: 25px;
+  }
+  .training-card .card-title {
+    font: 27px "Lato-700";
+  }
+}
+/*# sourceMappingURL=global.css.map */

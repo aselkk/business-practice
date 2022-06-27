@@ -1,0 +1,148 @@
+p {
+  margin: 0 !important;
+}
+
+.card-btn--training {
+  background: #47CF34;
+  width: 287px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.page-title__training {
+  margin: 32px 0 20px 0;
+}
+
+.trainig-text {
+  margin-bottom: 28px;
+}
+
+.card-btn--training {
+  margin: 59px 0 0 40px;
+}
+
+.card-btn--training:hover {
+  background-color: #30B01E;
+}
+
+.section__training_body {
+  margin-top: 162px !important;
+}
+
+.page-subtitle__training {
+  margin-bottom: 45px;
+}
+
+.page-heading {
+  font: 20px 'Lato-700';
+  margin-bottom: 20px;
+}
+
+.program {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 45px;
+}
+
+.program-item p {
+  padding-left: 55px;
+}
+
+.cubes-1 {
+  position: absolute;
+  z-index: -10;
+  right: 100px;
+}
+
+.cube-training-item {
+  position: absolute;
+  z-index: -10;
+  right: 0;
+}
+
+.polygon-training-item {
+  position: absolute;
+  z-index: -10;
+  left: 268px;
+  top: 156px;
+}
+
+.bonuses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container-sm, .container {
+    max-width: 700px !important;
+  }
+  .section__training_body {
+    margin-top: 90px !important;
+  }
+  .points-list,
+  .program-item p {
+    padding-left: 15px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-sm, .container {
+    max-width: 560px !important;
+  }
+  .page-title {
+    font: 38px "Lato-700" !important;
+  }
+  .card-btn--training {
+    margin: 25px 0 0 40px;
+  }
+  .card-btn--training {
+    margin: 25px 0 0 40px;
+  }
+  .page_list {
+    padding-left: 15px !important;
+  }
+  .card-btn--training {
+    background: #47CF34;
+    width: 230px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .card-btn--training {
+    margin: 23px 0 0 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font: 30px "Lato-700" !important;
+  }
+  .page-subtitle {
+    font: 25px "Lato-700" !important;
+  }
+  .polygon2-img,
+  .cube-img {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .cubes-1,
+  .cube-training-item,
+  .polygon-training-item {
+    display: none;
+  }
+}
+/*# sourceMappingURL=training_item.css.map */

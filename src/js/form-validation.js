@@ -55,5 +55,13 @@ export const renderFormValidation = () => {
 
         document.getElementById('userName').value = '';
         document.getElementById('userEmail').value = '';
+
+        setTimeout(() => {
+            document.querySelector('.form__btn').removeAttribute('disabled', '');
+            document.querySelector('#form__btn').innerText = 'получить консультацию';
+            
+            console.log('123456');
+        }, 2000);
     };
+
 };

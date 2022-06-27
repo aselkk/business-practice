@@ -118,6 +118,168 @@
   text-decoration: underline !important;
 }
 
+.services__title {
+  height: 200px;
+  position: relative;
+}
+
+.services__title-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  padding-top: 130px;
+}
+
+.services__title-img-poly {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.services__title-img-arrow {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  z-index: -1;
+  width: 63%;
+  height: 85%;
+}
+
+.services__items {
+  margin-top: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  padding-bottom: 58px;
+}
+
+.services__item {
+  background: #6ca7ef;
+  border-radius: 20px;
+  height: 249px;
+  margin: 7.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 45px;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.services__item:hover {
+  background: #5391dc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.services .col-sl-12,
+.services .col-md-6,
+.services .col-lg-4,
+.services .col-lg-8 {
+  padding: 0;
+}
+
+.services__item-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.services__item-img {
+  height: 81px;
+}
+
+.services__item-img_startup {
+  height: 73px;
+}
+
+@media (min-width: 992px) {
+  .services__img-report_height {
+    height: 507px;
+  }
+  .services__img-idea_height {
+    height: 164px;
+  }
+  .services__img-search_height {
+    height: 328px;
+  }
+  .services__img-startup_height {
+    height: 328px;
+  }
+  .services__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .item_up {
+    margin-top: -343px !important;
+  }
+  .services__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services__item-text {
+    margin-top: 30px;
+  }
+  .services__img-idea_justify {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services__img-idea_justify .services__item-text {
+    display: inline-block;
+    width: 460px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__title-img-poly {
+    display: none;
+  }
+  .services__title-img-arrow {
+    display: none;
+  }
+  .services__title-text {
+    text-align: center;
+    padding-top: 80px;
+    margin-left: 0;
+  }
+  .services__title {
+    height: 140px;
+  }
+  .services__items {
+    padding-bottom: 34px;
+  }
+}
+
 .problem {
   width: 298px;
   margin: 0;
@@ -285,7 +447,7 @@
   }
 }
 
-@media (min-width: 598px) {
+@media (man-width: 598px) {
   .hero__title {
     font-size: 28px;
   }

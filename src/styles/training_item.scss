@@ -42,12 +42,6 @@ p{
     gap: 45px;
 }
 
-.program-item{
-    p {
-        padding-left: 55px;
-    }
-}
-
 .cubes-1{
     position: absolute;
     z-index:-10;
@@ -82,7 +76,7 @@ p{
     }
     .points-list,
     .program-item p {
-        padding-left: 15px!important;
+        padding-left: 15px;
     }
 }
 
@@ -91,7 +85,7 @@ p{
         max-width: 560px!important;
     }
     .page-title {
-        font: 38px "Lato-700"!important;
+        font-size: 38px!important;
     }
     .card-btn--training {
         margin: 25px 0 0 40px;

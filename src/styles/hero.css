@@ -102,6 +102,12 @@
   color: #282C37;
 }
 
+#hero .problems__wrapper .problems__container .block p:hover {
+  color: #5391DC;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #hero .ps-4 {
   padding-left: 2.5rem !important;
 }
@@ -633,6 +639,12 @@
   }
   .decidions .container .grid .box-4 p {
     width: 253px;
+  }
+}
+
+@media (max-width: 738px) {
+  .decidions .container {
+    padding: 0 30px;
   }
 }
 

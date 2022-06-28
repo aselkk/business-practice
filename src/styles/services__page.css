@@ -142,7 +142,8 @@
 .polygon-services-item {
   position: absolute;
   z-index: -10;
-  left: 0;
+  left: 103px;
+  top: 18px;
 }
 
 .cube-services-item {

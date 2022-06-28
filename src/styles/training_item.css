@@ -134,6 +134,12 @@ p {
   }
 }
 
+@media (max-width: 450px) {
+  .points-list {
+    padding-left: 59px;
+  }
+}
+
 @media (max-width: 800px) {
   .cubes-1,
   .cube-training-item,

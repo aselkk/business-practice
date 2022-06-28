@@ -134,6 +134,24 @@ ul{
     }
 }
 
+@media (max-width: 1000px) {
+    .polygon-services-item{
+        display: none;
+    }
+    
+    .cube-services-item{
+        display: none;
+    }
+    .polygon2-img{
+        display: none;
+    }
+    .cube-services-item{
+        display: none;
+    }
+    .cube-img{
+        display: none;
+    }
+}
 @media (max-width: 1000px){
     .training-card{
         display: flex;

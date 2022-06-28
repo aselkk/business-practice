@@ -1,7 +1,23 @@
+
+.trainings,
+.section__services__page  {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    .cube-img,
+    .cube-services-item{
+        position: absolute;
+        right: 0;
+        z-index: -10;
+        transform: translateX(20%);
+    }
+}
 .container__trainings{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    position: relative;
+    margin-bottom: 16px;
 }
 
 .card-title{
@@ -50,13 +66,6 @@
         background-color: #4B9AFB;
     }
 }
-
-.cube-img{
-    position: absolute;
-    right: 0;
-    z-index: -10;
-}
-
 .polygon2-img{
     position: absolute;
     transform: translate(-24px, 30px);

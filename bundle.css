@@ -861,15 +861,21 @@ nav {
   }
 }
 .trainings,
-.section__services__page {
+.section__services__page,
+.section__training_intro {
   width: 100%;
   position: relative;
   overflow-x: hidden;
 }
 .trainings .cube-img,
 .trainings .cube-services-item,
+.trainings .cube-training-item,
 .section__services__page .cube-img,
-.section__services__page .cube-services-item {
+.section__services__page .cube-services-item,
+.section__services__page .cube-training-item,
+.section__training_intro .cube-img,
+.section__training_intro .cube-services-item,
+.section__training_intro .cube-training-item {
   position: absolute;
   right: 0;
   z-index: -10;
@@ -984,17 +990,18 @@ p {
   right: 100px;
 }
 
-.cube-training-item {
+.trainings .cube-img, .trainings .cube-services-item, .trainings .cube-training-item, .section__services__page .cube-img, .section__services__page .cube-services-item, .section__services__page .cube-training-item, .section__training_intro .cube-img, .section__training_intro .cube-services-item, .section__training_intro .cube-training-item {
   position: absolute;
-  z-index: -10;
   right: 0;
+  z-index: -10;
+  transform: translateX(16%);
 }
 
 .polygon-training-item {
   position: absolute;
   z-index: -10;
-  left: 268px;
-  top: 156px;
+  left: 103px;
+  top: 24px;
 }
 
 .bonuses {
@@ -1003,6 +1010,13 @@ p {
   gap: 20px;
 }
 
+@media (max-width: 800px) {
+  .cubes-1,
+.cube-training-item,
+.polygon-training-item {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .container-sm, .container {
     max-width: 700px !important;
@@ -1055,13 +1069,6 @@ p {
 @media (max-width: 450px) {
   .points-list {
     padding-left: 59px;
-  }
-}
-@media (max-width: 800px) {
-  .cubes-1,
-.cube-training-item,
-.polygon-training-item {
-    display: none;
   }
 }
 .modal-window {

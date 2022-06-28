@@ -1,6 +1,29 @@
 extends ../layout.pug
 include ../mixins/problems
 block content
+    -
+        decidions = [
+                {
+                    text: "Разрабатываем маркетинг-план: дорожная карта достижения целей",
+                    img: "serv-1",
+                    link: "./services_page.html"
+                },
+                {
+                    text: "Повышаем эффективность продвижения: аудит существующей модели",
+                    img: "serv-idea",
+                    link: "./services_page.html"
+                },
+                {
+                    text: "Находим скрытую прибыль: анализ модели ценообразования",
+                    img: "serv-search",
+                    link: "./services_page.html"
+                },
+                {
+                    text: "Запускаем новый проект: start-up маркетинг",
+                    img: "serv-rocket",
+                    link: "./services_page.html"
+                }
+            ]
     section#hero
         .container  
             .about__wrapper.row.justify-content-md-between.justify-content-center
@@ -30,38 +53,36 @@ block content
                     .col-11.col-md-6.col-lg-4.block
                         img(src="assets/img/logo-list.svg", alt="")
                         p.col-xl-8.col-lg-8.col-md-10 Как не попасть в "черную дыру" затрат на продвижение?
-            .row.hero__container
-                img.hero__svg(src="assets/img/Polygon 2.png", alt="")
-                p.hero__text-title Услуги
-                .col-md-4.col-sm-6.col-12
-                    .block__hero-first.block-hero__size
-                        img(src="assets/img/serv-1.svg", alt="")
-                        p 
-                            a(href="./services.html") Разрабатываем маркетинг-план: дорожная карта достижения целей
-                .col-md-8.col-sm-6.col-12
-                    .block__hero-second.block-hero__size
-                        img(src="assets/img/serv-idea.svg", alt="")
-                        p
-                            a(href="./services.html") Повышаем эффективность продвижения: аудит существующей модели
-                    .row.responsive__web
-                        .col-md-6.col-sm-6
-                            .block__hero-third.block-hero__size
-                                img(src="assets/img/serv-search.svg", alt="")
-                                p
-                                    a(href="./services.html") Находим скрытую прибыль: анализ модели ценообразования
-                        .col-md-6.col-sm-6
-                            .block__hero-fourth.block-hero__size
-                                img(src="assets/img/serv-rocket.svg", alt="")
-                                p 
-                                    a(href="./services.html") Запускаем новый проект: start-up маркетинг
-                .col-sm-6.col-12.responsive__ipad
-                    .block__hero-third.block-hero__size
-                        img(src="assets/img/serv-search.svg", alt="")
-                        p Находим скрытую прибыль: анализ модели ценообразования
-                .col-sm-6.col-12.responsive__ipad
-                    .block__hero-fourth.block-hero__size
-                        img(src="assets/img/serv-rocket.svg", alt="")
-                        p Запускаем новый проект: start-up маркетинг
+        //- section#services.services.w-100
+        //-     .container
+        //-         .services__title.w-100
+        //-             h1.services__title-text Услуги
+        //-             img(src="../../assets/img/icons/cube_one.svg" alt="polygon").services__title-img-poly
+        //-             img(src="../../assets/img/icons/line-serv_web.svg" alt="arrow").services__title-img-arrow
+        //-         .row.services__items
+        //-             .col-sl-12.col-md-6.col-lg-4
+        //-                 a(href="./services.html").services__item.services__img-report_height
+        //-                     img(src="../../assets/img/icons/plan.svg" alt="report").services__item-img
+        //-                     p.services__item-text Разрабатываем маркетинг-план: дорожная карта достижения целей 
+        //-             .col-sl-12.col-md-6.col-lg-8
+        //-                 a(href="./services.html").services__item.services__img-idea_height.services__img-idea_justify
+        //-                     img(src="../../assets/img/icons/lamp.svg" alt="idea").services__item-img
+        //-                     p.services__item-text Повышаем эффективность продвижения: аудит существующей модели
+        //-             .col-sl-12.col-md-6.col-lg-4.item_up
+        //-                 a(href="./services.html").services__item.services__img-search_height
+        //-                     img(src="../../assets/img/icons/search.svg" alt="search").services__item-img
+        //-                     p.services__item-text Находим скрытую прибыль: анализ модели ценообразования 
+        //-             .col-sl-12.col-md-6.col-lg-4.item_up
+        //-                 a(href="./services.html").services__item.services__img-startup_height
+        //-                     img(src="../../assets/img/icons/startup.svg" alt="startup").services__item-img.services__item-img_startup
+        //-                     p.services__item-text Запускаем новый проект: start-up маркетинг
+        .decidions#services
+            .container
+                .grid
+                    each box, index in decidions
+                        a(class=`box box-${index+1}` href=box.link)
+                            img(src=`assets/img/${box.img}.svg` alt="box")
+                            p= box.text
 
     #modal-window.modal-window.col-lg-12
         form#modal-form-id.modal-window__modal-form(name='modal-form')

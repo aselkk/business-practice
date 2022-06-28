@@ -162,3 +162,16 @@ textarea::placeholder {
         left: 99px;
     }
 }
+
+@media (max-width: 860px) {
+    .modal-window__modal-form {
+        width: 100%;
+        height: 100vh;
+    }
+}
+@media (max-width: 360px) {
+    .modal-window__modal-form {
+        padding: 57px 42px;
+    }
+}
+

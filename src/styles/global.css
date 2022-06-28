@@ -8,10 +8,6 @@
   transition: 0.2s;
 }
 
-.row {
-  margin: 0;
-}
-
 .container {
   max-width: 1200px;
 }
@@ -150,7 +146,7 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 30px;
-    padding: 20px;
+    padding: 35px;
   }
   .training-card .page_list {
     padding: 0;

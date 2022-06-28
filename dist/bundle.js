@@ -8310,15 +8310,13 @@ const renderFormValidation = () => {
         document.getElementById('userEmail').value = '';
 
         setTimeout(() => {
-            document.querySelector('.form-btn').removeAttribute('disabled');
-            document.querySelector('form-btn').innerText = 'отправить';
-
-            document.getElementById('name').value = '';
-            document.getElementById('mail').value = '';
-
-            console.log(values);
+            document.querySelector('.form__btn').removeAttribute('disabled', '');
+            document.querySelector('#form__btn').innerText = 'получить консультацию';
+            
+            console.log('123456');
         }, 2000);
     };
+
 };
 
 /***/ }),
